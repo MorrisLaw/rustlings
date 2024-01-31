@@ -13,8 +13,6 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
 // fn calculate_price_of_apples {
 
@@ -30,4 +28,18 @@ fn verify_test() {
     assert_eq!(80, price2);
     assert_eq!(41, price3);
     assert_eq!(65, price4);
+}
+
+fn calculate_price_of_apples(apple_price: i32) -> i32 {
+    let mut result = 0;
+    
+    if apple_price <= 40 {
+       return apple_price * 2;
+    }
+
+    if apple_price > 40 {
+        result += apple_price;
+        println!("{}", result);
+    }
+    return result;
 }
