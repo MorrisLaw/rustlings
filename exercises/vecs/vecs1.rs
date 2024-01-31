@@ -6,13 +6,16 @@
 // Make me compile and pass the test!
 //
 // Execute `rustlings hint vecs1` or use the `hint` watch subcommand for a hint.
-
-// I AM NOT DONE
-
+// IM NOT DONE
 fn array_and_vec() -> ([i32; 4], Vec<i32>) {
     let a = [10, 20, 30, 40]; // a plain array
-    let v = // TODO: declare your vector here with the macro for vectors
-
+    // THIS IS ONE WAY TO DO IT. Loop through and push each value.
+    //let mut v: Vec<i32> = Vec::new();
+    //for i in a {
+    //    v.push(i)
+    //}
+    // THIS IS ANOTHER WAY. Use a slice to convert to vec.
+    let v = a.to_vec();
     (a, v)
 }
 
